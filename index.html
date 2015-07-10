@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>XROS - webapp</title>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="js/plugins/switchery/css/switchery.min.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link type="text/css" rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="main-content">
+                <nav class="navbar navbar-default custom-nav" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header navbar-header_padding col-md-3">
+                            <a class="navbar-brand-img  hidden-xs visible-sm visible-md visible-lg" href="#"><img src="img/Logo.png" alt="logo"> XROS</a>
+                            <a href="#" data-toggle="#wrapper" id="sidebar-toggle" class="sidemenu-btn visible-xs hidden-sm hidden-md hidden-lg">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </a>
+                        </div>
+                        <ul class="nav navbar-nav header-navbar hidden-xs visible-sm visible-md visible-lg">
+                            <li><a href="#">
+                                <span class="ico ico-Profile"></span><p>Virtual Team</p>
+                            </a></li>
+                            <li><a href="#">
+                                <span class="ico ico-mail"></span><p>Email</p>
+                            </a></li>
+                            <li><a href="#">
+                                <span class="fa fa-comment"></span>
+                                <p>Channels</p>
+                            </a></li>
+                            <li><a href="#" class="header-search-md">Search</a></li>
+                        </ul>
+                        <span class="visible-xs hidden-sm xs-header-text col-xs-10 col-sm-10">Making it work</span>
+                        <ul class="nav navbar-nav navbar-right navbar-right_custom">
+                            <li><a href="#"><span class="ico ico-setting"></span>
+                                <strong class="colorBlack hidden-xs hidden-sm visible-md visible-lg">Tair</strong>
+                            </a></li>
+                        </ul>
+                        <div class="nav navbar-nav navbar-search visible-xs hidden-sm">
+                            <form class="navbar-form navbar-left navbar-form_custom navbar-left" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control_custom" placeholder="Search">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+
+                <article>
+                    <div class="container-fluid fullHeight">
+                        <div class="row columnsHeight fullHeight">
+                            <div id="sidebar">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="header-left-menu-xs">
+                                            <nav class="top-navigation clearfix" role="navigation">
+                                                <a href="#" class="pull-left">
+                                                    <img src="img/Logo.png" class="logo-xs" alt="">
+                                                </a>
+                                                <div class="pull-right">
+                                                    <a href="#">
+                                                        <span class="fa fa-comment"></span>
+                                                        <p>Channels</p>
+                                                    </a>
+                                                    <a href="#">
+                                                        <span class="ico ico-Profile"></span><p>Email</p>
+                                                    </a>
+                                                    <a href="#">
+                                                        <span class="fa fa-search"></span><p>Virtual Team</p>
+                                                    </a>
+                                                    <a href="#">
+                                                        <span class="ico ico-setting"></span>
+                                                        <p>Search</p>
+                                                    </a>
+                                                </div>
+                                            </nav>
+                                            <a href="" class="add-channel-block">
+                                                <span class="fa fa-plus"></span> Add new channel
+                                            </a>
+                                        </div>
+                                        <ul>
+                                            <li><a href="#">
+                                                <p>Make it work <span class="badge_custom">3</span></p>
+                                                <img src="img/img-face-2.png" alt="">
+                                                <img src="img/img-face-1.png" alt="">
+                                                <img src="img/img-face-4.png" alt="">
+                                                <img src="img/img-face-3.png" alt="">
+                                                <img src="img/img-face-5.png" alt="">
+                                                <img src="img/img-face-2.png" alt="">
+                                            </a></li>
+                                            <li><a href="#">
+                                                <p>Marketing team discussion <span class="badge_custom">1</span></p>
+                                                <img src="img/img-face-2.png" alt="">
+                                                <img src="img/img-face-1.png" alt="">
+                                                <img src="img/img-face-4.png" alt="">
+                                            </a></li>
+                                            <li><a href="#">
+                                                <p>Make it work </p>
+                                                <img src="img/img-face-2.png" alt="">
+                                                <img src="img/img-face-1.png" alt="">
+                                                <img src="img/img-face-4.png" alt="">
+                                            </a></li>
+                                            <li><a href="#">
+                                                <p>DM: Ami & Tair</p>
+                                                <img src="img/img-face-2.png" alt="">
+                                                <img src="img/img-face-1.png" alt="">
+                                            </a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3 left-side-menu_wrap hidden-xs hidden-sm visible-md visible-lg">
+                                <ul class="left-side-menu">
+                                    <li><a href=""><span class="ico ico-new-channel"></span> New Channel</a></li>
+                                    <li><a href=""><span class="fa fa-star-o"></span> Making it work</a></li>
+                                    <li><a href=""><span class="fa fa-star-o"></span> Making it work</a></li>
+                                    <li><a href=""><span class="fa fa-star-o"></span> Hello</a></li>
+                                    <li><a href=""><span class="fa fa-star-o"></span> Salaries</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-md-6 content">
+                                <div class="message-box-wrap">
+                                    <div class="row message-box">
+                                        <div class="col-xs-2 col-sm-1 col-md-2 col-lg-1"></div>
+                                        <div class="col-xs-10 col-sm-11 col-md-10 col-lg-11 message-content-wrap">
+                                            <img src="img/img-4.png" class="hidden-xs" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row message-box">
+                                        <div class="col-xs-12 message-content-wrap">
+                                            <button class="btn news-btn"  data-toggle="modal" data-target="#add-channel">New</button>
+                                        </div>
+                                    </div>
+                                    <div class="row message-box">
+                                        <div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 message-icon-wrap">
+                                            <span class="message-icon"><img src="img/img-face-1.png" alt=""><span class="badge_custom online"></span></span>
+                                        </div>
+                                        <div class="col-xs-10 col-sm-11 col-md-10 col-lg-11 message-content-wrap">
+                                            <a href="#" class="heading"><img src="img/crown.png" class="crown-icon turquoise" alt=""> Danny Degashvili
+                                                <span class="date">4:30PM</span>
+                                            </a>
+                                            <div class="content-text">Send the attachment in the mail and write on the enveloper:
+                                                Tair Barkay, Harabi Mibacharach 24
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row message-box">
+                                        <div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 message-icon-wrap">
+                                            <span class="message-icon"><img src="img/img-face-1.png" alt=""><span class="badge_custom online"></span></span>
+                                        </div>
+                                        <div class="col-xs-10 col-sm-11 col-md-10 col-lg-11 message-content-wrap">
+                                            <a href="#" class="heading"><img src="img/crown-brown.png" class="crown-icon brown" alt=""> Harry White
+                                                <span class="date">4:30PM</span>
+                                            </a>
+                                            <div class="content-text">Hey. Take a look at this. Great insights.</div>
+                                            <img src="img/content-img.png" class="fullWidthImg"  alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row message-box">
+                                        <div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 message-icon-wrap">
+                                            <span class="message-icon"><img src="img/img-face-1.png" alt=""><span class="badge_custom online"></span></span>
+                                        </div>
+                                        <div class="col-xs-10 col-sm-11 col-md-10 col-lg-11 message-content-wrap">
+                                            <a href="#" class="heading"><img src="img/crown-blue.png" class="crown-icon blue" alt=""> Harry White
+                                                <span class="date">4:30PM</span>
+                                            </a>
+                                            <div class="content-text">Hey. Take a look at this. Great insights.</div>
+                                            <img src="img/img-3.png" class="content-img" alt="">
+                                            <img src="img/img-3.png" class="content-img hidden-xs" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <form class="send-message-form hidden-sm visible-md visible-lg">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <a type="submit" class="btn col-md-1 send-message-btn hidden-xs hidden-sm hidden-md visible-lg">
+                                                <img src="img/up-arrow.png" class="up-arrow" alt="">
+                                            </a>
+                                            <div class="input-group col-md-12 col-lg-11">
+                                                <input type="text" class="form-control" placeholder="Send message...">
+                                                <span class="input-group-addon mike-icon-wrap">
+                                                    <img src="img/mike.png" class="mike-icon" alt="">
+                                                </span>
+                                                <span class="input-group-addon ico ico-thumbs-up"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form class="col-sm-12 send-message-form-xs visible-xs visible-sm hidden-md" role="form">
+                                    <input type="text" class="form-control" placeholder="Send message...">
+                                    <div class="nav-icons">
+                                        <div class="pull-left">
+                                            <img src="img/imgs.png" alt="" class="imgs-icon">
+                                            <img src="img/mike.png" alt="" class="mike-icon">
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="ico ico-thumbs-up"></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-3 right-side-menu_wrap hidden-xs hidden-sm visible-md visible-lg">
+                                <div class="right-side-menu_header">
+                                    <p><b>Making it work</b></p>
+                                    <p class="subheader">Created by James Horton</p>
+                                    <div class="tab-links">
+                                        <a href=""><span class="ico ico-bell"></span> Mute Notifications</a>
+                                        <a href="">Leave Channel</a>
+                                    </div>
+                                </div>
+                                <ul class="right-side-menu">
+                                    <li><a href="">
+                                        <span class="right-menu_face-icons"><img src="img/img-face-1.png" alt="">
+                                        <span class="badge_custom online"></span></span> James Horton
+                                    </a></li>
+                                    <li><a href="">
+                                        <span class="right-menu_face-icons"><img src="img/img-face-5.png" alt="">
+                                        <span class="badge_custom online"></span></span> Tair Barkay
+                                    </a></li>
+                                    <li><a href="">
+                                        <span class="right-menu_face-icons"><img src="img/img-face-3.png" alt="">
+                                        <span class="badge_custom busy"></span></span> Name
+                                    </a></li>
+                                    <li><a href="">
+                                        <span class="right-menu_face-icons"><img src="img/img-face-3.png" alt="">
+                                        <span class="badge_custom busy"></span></span> Name
+                                    </a></li>
+                                    <li><a href="">
+                                        <span class="right-menu_face-icons"><img src="img/img-face-5.png" alt="">
+                                        <span class="badge_custom online"></span></span> Name
+                                    </a></li>
+                                    <li><a href="">
+                                        <span class="right-menu_face-icons"><img src="img/img-face-3.png" alt="">
+                                        <span class="badge_custom busy"></span></span> Name
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!-- modal window -->
+        <div class="modal fade" id="add-channel" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Create New Channel</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" class="form" id="">
+                            <div class="form-group add-name-wrap">
+                                <label for="add-name">Channel name</label>
+                                <input type="text" id="add-name" class="form-control" placeholder="This is the channel name">
+                            </div>
+                            <div class="form-group">
+                                <label for="search-members" class="search-members-label">Team members</label>
+                                <a href="#" class="modal-add-btn"><span class="ico ico-add ico-add_custom"></span> Add</a>
+                                <div class="search-members-wrap ui-widget">
+                                    <input type="search" id="search-members" class="form-control hidden autocomplete" placeholder="Type your variant">
+                                </div>
+                                <div class="alert alert-default alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                    <img src="img/img-face-0.png" class="choose-face-icon pull-left" alt="">
+                                    <div class="alert-content">
+                                        <p class="heading"><img src="img/crown.png" class="crown-icon turquoise" alt=""> Gordon Ramsey</p>
+                                        <p class="subheading">Member of 4 Xros teams</p>
+                                    </div>
+                                </div>
+                                <div class="alert alert-default alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                    <img src="img/img-face-0.png" class="choose-face-icon pull-left" alt="">
+                                    <div class="alert-content">
+                                        <p class="heading"><img src="img/crown.png" class="crown-icon turquoise" alt=""> Ami Ben David</p>
+                                        <p class="subheading">ami.bendavid@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="clearfix modal-notifications-block">
+                            <div class="pull-left modal-notifications-block_text">
+                                Mute Notifications <span>No</span>
+                            </div>
+                            <div class="pull-right">
+                                <input type="checkbox" class="js-switch input-sm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="pull-right">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-orange">Create channel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="js/plugins/switchery/js/switchery.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
