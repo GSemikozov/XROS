@@ -8,10 +8,12 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link type="text/css" rel="stylesheet" href="js/plugins/switchery/css/switchery.min.css">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link type="text/css" rel="stylesheet" href="js/plugins/vanillabox/theme/bitter/vanillabox.css">
         <link type="text/css" rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <div id="wrapper">
+
             <div class="main-content">
                 <nav class="navbar navbar-default custom-nav" role="navigation">
                     <div class="container-fluid">
@@ -116,7 +118,8 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-3 left-side-menu_wrap hidden-xs hidden-sm visible-md visible-lg">
+                            <!--<div style="height: 100%; position: absolute; left: -300px; z-index: -1;"></div>-->
+                            <div class="col-sm-3 col-md-3 left-side-menu_wrap hidden-xs visible-sm visible-md visible-lg">
                                 <ul class="left-side-menu">
                                     <li><a href=""><span class="ico ico-new-channel"></span> New Channel</a></li>
                                     <li><a href=""><span class="fa fa-star-o"></span> Making it work</a></li>
@@ -125,11 +128,11 @@
                                     <li><a href=""><span class="fa fa-star-o"></span> Salaries</a></li>
                                 </ul>
                             </div>
-                            <div class="col-xs-12 col-md-6 content">
+                            <div class="col-xs-12 col-sm-6 col-md-6 content">
                                 <div class="message-box-wrap">
                                     <div class="row message-box">
-                                        <div class="col-xs-2 col-sm-1 col-md-2 col-lg-1"></div>
-                                        <div class="col-xs-10 col-sm-11 col-md-10 col-lg-11 message-content-wrap">
+                                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1"></div>
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-11 message-content-wrap">
                                             <img src="img/img-4.png" class="hidden-xs" alt="">
                                         </div>
                                     </div>
@@ -139,10 +142,10 @@
                                         </div>
                                     </div>
                                     <div class="row message-box">
-                                        <div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 message-icon-wrap">
+                                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1 message-icon-wrap">
                                             <span class="message-icon"><img src="img/img-face-1.png" alt=""><span class="badge_custom online"></span></span>
                                         </div>
-                                        <div class="col-xs-10 col-sm-11 col-md-10 col-lg-11 message-content-wrap">
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-11 message-content-wrap">
                                             <a href="#" class="heading"><img src="img/crown.png" class="crown-icon turquoise" alt=""> Danny Degashvili
                                                 <span class="date">4:30PM</span>
                                             </a>
@@ -152,10 +155,10 @@
                                         </div>
                                     </div>
                                     <div class="row message-box">
-                                        <div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 message-icon-wrap">
+                                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1 message-icon-wrap">
                                             <span class="message-icon"><img src="img/img-face-1.png" alt=""><span class="badge_custom online"></span></span>
                                         </div>
-                                        <div class="col-xs-10 col-sm-11 col-md-10 col-lg-11 message-content-wrap">
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-11 message-content-wrap">
                                             <a href="#" class="heading"><img src="img/crown-brown.png" class="crown-icon brown" alt=""> Harry White
                                                 <span class="date">4:30PM</span>
                                             </a>
@@ -164,16 +167,16 @@
                                         </div>
                                     </div>
                                     <div class="row message-box">
-                                        <div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 message-icon-wrap">
+                                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1 message-icon-wrap">
                                             <span class="message-icon"><img src="img/img-face-1.png" alt=""><span class="badge_custom online"></span></span>
                                         </div>
-                                        <div class="col-xs-10 col-sm-11 col-md-10 col-lg-11 message-content-wrap">
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-11 message-content-wrap">
                                             <a href="#" class="heading"><img src="img/crown-blue.png" class="crown-icon blue" alt=""> Harry White
                                                 <span class="date">4:30PM</span>
                                             </a>
                                             <div class="content-text">Hey. Take a look at this. Great insights.</div>
-                                            <img src="img/img-3.png" class="content-img" alt="">
-                                            <img src="img/img-3.png" class="content-img hidden-xs" alt="">
+                                            <a href="img/img-3.png" class="vanilla"><img src="img/img-3.png" class="content-img" alt=""></a>
+                                            <a href="img/content-img.png" class="vanilla"><img src="img/img-3.png" class="content-img hidden-xs" alt=""></a>
                                         </div>
                                     </div>
                                 </div>
@@ -207,7 +210,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-md-3 right-side-menu_wrap hidden-xs hidden-sm visible-md visible-lg">
+                            <div class="col-sm-3 col-md-3 right-side-menu_wrap hidden-xs visible-sm visible-md visible-lg">
                                 <div class="right-side-menu_header">
                                     <p><b>Making it work</b></p>
                                     <p class="subheader">Created by James Horton</p>
@@ -307,6 +310,7 @@
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <script src="js/plugins/switchery/js/switchery.min.js"></script>
+        <script src="js/plugins/vanillabox/jquery.vanillabox-0.1.6.min.js"></script>
         <script src="js/app.js"></script>
     </body>
 </html>

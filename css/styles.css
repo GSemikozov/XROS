@@ -1,5 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 @import url(../css/custom-icons.css);
+/*mixins*/
+/*mixins END*/
 html {
   height: 100%;
 }
@@ -10,6 +13,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 a {
   outline: none !important;
@@ -20,6 +24,1017 @@ ul {
   margin: 0;
   padding: 0;
 }
+/*=================================== old styles ==============================================*/
+.rtl {
+  direction: rtl;
+}
+.ltr {
+  direction: ltr;
+}
+header {
+  background-color: #eeeeef;
+  position: fixed;
+  height: 64px;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  transition: top 0.5s ease-in-out;
+}
+header .logo {
+  margin: 0px 00px 0;
+  position: absolute;
+}
+header.out {
+  top: -64px;
+}
+header .headerProfile {
+  margin: 11px;
+}
+header .headerProfile .displayName {
+  font-size: 13px;
+  color: black;
+  font-weight: 600;
+  padding: 0 5px;
+}
+header .headerProfile img {
+  overflow: hidden;
+  border-radius: 2px;
+}
+header .topNav {
+  width: 700px;
+  margin-left: 340px;
+}
+header .topNav .navItem {
+  display: inline-block;
+  padding: 15px;
+  font-size: 17px;
+}
+#appCanvas {
+  padding-top: 64px;
+  /*COMMON APPS ITEMS*/
+}
+#appCanvas #chatView {
+  padding-top: 20px;
+}
+#appCanvas #chatView #chatWrapper {
+  position: relative;
+  margin-left: 320px;
+  width: 700px;
+}
+#appCanvas #chatView #chatWrapper.preloading {
+  /*background:url('../img/preloader.gif') no-repeat center bottom;*/
+  padding-bottom: 80px;
+  margin-bottom: 20px;
+  box-shadow: none;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper {
+  border-top: 1px solid #dcdfde;
+  background-color: white;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper:first-child {
+  border-top: none;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper.preloading {
+  background: url(../img/contactPreloading.png) no-repeat center top white;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard {
+  padding: 12px;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .btn {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  margin-top: 0;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .connectedBT {
+  margin: 0;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .imgWrapper {
+  float: left;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .senderImg.vipImg {
+  background-color: #AAA;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .infoWrapper {
+  float: left;
+  width: 290px;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .infoWrapper .head {
+  color: #999;
+  font-weight: 400;
+  font-size: 15px;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .infoWrapper .head .contactTitle {
+  font-size: 17px;
+  color: black;
+  display: inline-block;
+  padding-right: 10px;
+  font-weight: 500;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .infoWrapper .head .about {
+  color: black;
+  margin: 10px 0 5px;
+  display: block;
+  font-size: 16px;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .infoWrapper .body {
+  color: #000;
+  font-weight: 400;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .infoWrapper .body .title {
+  font-weight: 400;
+  color: #999;
+  margin-top: 1px;
+  font-size: 13px;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .infoWrapper .body .network {
+  margin-top: 7px;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .infoWrapper .body .network .senderImg {
+  width: 28px;
+  height: 28px;
+  margin-right: 5px;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .infoWrapper .body .more_vips {
+  color: #999;
+  line-height: 28px;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .crown {
+  background-color: #0c5ba3;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .crown.color-blue {
+  background-color: #0c5ba3;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .crown.color-deeppurple {
+  background-color: #212142;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .crown.color-green {
+  background-color: #0aa33d;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .crown.color-orange {
+  background-color: #e56005;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .crown.color-pink {
+  background-color: #d65479;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .crown.color-purple {
+  background-color: #2c3e50;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .crown.color-red {
+  background-color: #d32f2f;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .crown.color-teal {
+  background-color: #03b09e;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .crown.color-lightblue {
+  background-color: #127ccc;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .crown.color-deepred {
+  background-color: #a81111;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard .crown.color-yellow {
+  background-color: #dda800;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard.profile .imgWrapper {
+  float: none;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard.profile .imgWrapper .senderImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard.profile .infoWrapper {
+  float: none;
+  clear: both;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard.profile .infoWrapper .head {
+  font-size: 17px;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .contactCard.profile .infoWrapper .head .contactTitle {
+  font-size: 19px;
+  margin-top: 10px;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .tabs {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .tabs .tab {
+  border-right: 1px solid #e6e6e6;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  padding: 0;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .tabs .tab:last-child {
+  border-right: none;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .tabs .tab a {
+  padding: 10px;
+  display: block;
+  color: #939393;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper .tabs .tab a:hover {
+  background: #EFEFEF;
+  text-decoration: none;
+}
+#appCanvas #chatView #chatWrapper .contactWrapper.profile3 .tabs .tab.selected a {
+  color: #e56005;
+}
+#appCanvas #chatView #navigation {
+  position: fixed;
+  top: 64px;
+  width: 320px;
+  height: 100%;
+  padding-top: 20px;
+  background-color: #535459;
+}
+#appCanvas #chatView #navigation .btn {
+  margin-top: 0;
+}
+#appCanvas #chatView #navigation .labelItem {
+  display: block;
+  min-width: 168px;
+  color: black;
+  font-size: 15px;
+  margin: 1px 0;
+  padding: 7px;
+  text-indent: 10px;
+  text-align: left;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity .3s ease,color .3s ease;
+  text-decoration: none;
+  text-transform: initial;
+  font-weight: 500;
+  color: #999;
+  background: url(../img/label_icons.png) no-repeat 3px 100px;
+}
+#appCanvas #chatView #navigation .labelItem:hover {
+  color: white;
+}
+#appCanvas #chatView #navigation .labelItem.show {
+  opacity: 1;
+}
+#appCanvas #chatView #navigation .labelItem.selected {
+  color: white;
+  font-weight: 600;
+}
+#appCanvas #chatView #searchWrapper {
+  position: fixed;
+  top: 64px;
+  width: 230px;
+  left: 50%;
+  margin-top: 20px;
+  margin-left: 276px;
+  background-color: white;
+  border-left: 1px solid #ddddde;
+}
+#appCanvas #chatView #searchWrapper #SearchWrapperInner {
+  padding: 12px;
+}
+#appCanvas #chatView #searchWrapper #SearchWrapperInner h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+#appCanvas #chatView .btn-success {
+  background-color: #05b09e;
+}
+#appCanvas #chatView .btn-default {
+  border: 1px solid #05b09e;
+  color: #05b09e;
+}
+#appCanvas #networkView {
+  padding-top: 20px;
+}
+#appCanvas #networkView #feedWrapper {
+  width: 520px;
+  margin: 0 auto;
+}
+#appCanvas #networkView #feedWrapper.preloading {
+  background: url('../img/preloader.gif') no-repeat center bottom;
+  padding-bottom: 80px;
+  margin-bottom: 20px;
+  box-shadow: none;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper {
+  border-top: 1px solid #dcdfde;
+  background-color: white;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper:first-child {
+  border-top: none;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper.preloading {
+  background: url(../img/contactPreloading.png) no-repeat center top white;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard {
+  padding: 12px;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .btn {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  margin-top: 0;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .connectedBT {
+  margin: 0;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .imgWrapper {
+  float: left;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .senderImg.vipImg {
+  background-color: #AAA;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .infoWrapper {
+  float: left;
+  width: 290px;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .infoWrapper .head {
+  color: #999;
+  font-weight: 400;
+  font-size: 15px;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .infoWrapper .head .contactTitle {
+  font-size: 17px;
+  color: black;
+  display: inline-block;
+  padding-right: 10px;
+  font-weight: 500;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .infoWrapper .head .about {
+  color: black;
+  margin: 10px 0 5px;
+  display: block;
+  font-size: 16px;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .infoWrapper .body {
+  color: #000;
+  font-weight: 400;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .infoWrapper .body .title {
+  font-weight: 400;
+  color: #999;
+  margin-top: 1px;
+  font-size: 13px;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .infoWrapper .body .network {
+  margin-top: 7px;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .infoWrapper .body .network .senderImg {
+  width: 28px;
+  height: 28px;
+  margin-right: 5px;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .infoWrapper .body .more_vips {
+  color: #999;
+  line-height: 28px;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .crown {
+  background-color: #0c5ba3;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .crown.color-blue {
+  background-color: #0c5ba3;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .crown.color-deeppurple {
+  background-color: #212142;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .crown.color-green {
+  background-color: #0aa33d;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .crown.color-orange {
+  background-color: #e56005;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .crown.color-pink {
+  background-color: #d65479;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .crown.color-purple {
+  background-color: #2c3e50;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .crown.color-red {
+  background-color: #d32f2f;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .crown.color-teal {
+  background-color: #03b09e;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .crown.color-lightblue {
+  background-color: #127ccc;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .crown.color-deepred {
+  background-color: #a81111;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard .crown.color-yellow {
+  background-color: #dda800;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard.profile .imgWrapper {
+  float: none;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard.profile .imgWrapper .senderImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard.profile .infoWrapper {
+  float: none;
+  clear: both;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard.profile .infoWrapper .head {
+  font-size: 17px;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .contactCard.profile .infoWrapper .head .contactTitle {
+  font-size: 19px;
+  margin-top: 10px;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .tabs {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .tabs .tab {
+  border-right: 1px solid #e6e6e6;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  padding: 0;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .tabs .tab:last-child {
+  border-right: none;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .tabs .tab a {
+  padding: 10px;
+  display: block;
+  color: #939393;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper .tabs .tab a:hover {
+  background: #EFEFEF;
+  text-decoration: none;
+}
+#appCanvas #networkView #feedWrapper .contactWrapper.profile3 .tabs .tab.selected a {
+  color: #e56005;
+}
+#appCanvas #networkView #navigation {
+  position: fixed;
+  right: 50%;
+  margin-right: 276px;
+  max-width: 268px;
+  margin-top: 20px;
+  top: 64px;
+}
+#appCanvas #networkView #navigation .btn {
+  margin-top: 0;
+}
+#appCanvas #networkView #navigation .labelItem {
+  display: block;
+  min-width: 168px;
+  color: black;
+  font-size: 15px;
+  margin: 1px 0;
+  padding: 7px;
+  text-indent: 10px;
+  text-align: left;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity .3s ease;
+  text-decoration: none;
+  text-transform: initial;
+  font-weight: 500;
+  color: #999;
+  background: url(../img/label_icons.png) no-repeat 3px 100px;
+}
+#appCanvas #networkView #navigation .labelItem.show {
+  opacity: 1;
+}
+#appCanvas #networkView #navigation .labelItem.selected {
+  color: black;
+  font-weight: 600;
+}
+#appCanvas #networkView #searchWrapper {
+  position: fixed;
+  top: 64px;
+  width: 230px;
+  left: 50%;
+  margin-top: 20px;
+  margin-left: 276px;
+  background-color: white;
+  border-left: 1px solid #ddddde;
+}
+#appCanvas #networkView #searchWrapper #SearchWrapperInner {
+  padding: 12px;
+}
+#appCanvas #networkView #searchWrapper #SearchWrapperInner h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+#appCanvas #networkView .btn-success {
+  background-color: #05b09e;
+}
+#appCanvas #networkView .btn-default {
+  border: 1px solid #05b09e;
+  color: #05b09e;
+}
+#appCanvas #feedView #labelsWrapper {
+  position: fixed;
+  left: 0;
+  max-width: 268px;
+  top: 64px;
+}
+#appCanvas #feedView #labelsWrapper .labelItem {
+  display: block;
+  min-width: 168px;
+  color: black;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 10px;
+  padding: 7px;
+  text-indent: 40px;
+  text-align: left;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity .3s ease;
+  text-decoration: none;
+  text-transform: initial;
+  background: url(../img/label_icons.png) no-repeat 3px 100px;
+}
+#appCanvas #feedView #labelsWrapper .labelItem.show {
+  opacity: 1;
+}
+#appCanvas #feedView #labelsWrapper .labelItem.selected {
+  background-color: #d8e2eb;
+}
+#appCanvas #feedView #labelsWrapper .labelItem.label-inbox {
+  background-position: 3px 7px;
+}
+#appCanvas #feedView #labelsWrapper .labelItem.label-vip {
+  background-position: 3px -46px;
+}
+#appCanvas #feedView #labelsWrapper .labelItem.label-later {
+  background-position: 3px -92px;
+}
+#appCanvas #feedView #labelsWrapper .labelItem.label-category_social {
+  background-position: 3px -138px;
+}
+#appCanvas #feedView #labelsWrapper .labelItem.label-category_promotions {
+  background-position: 3px -184px;
+}
+#appCanvas #feedView #labelsWrapper .labelItem.label-unread {
+  background-position: 3px -230px;
+}
+#appCanvas #feedView #labelsWrapper .labelItem.label-sent {
+  background-position: 3px -276px;
+}
+#appCanvas #feedView #labelsWrapper .labelItem.label-archived {
+  background-position: 3px -322px;
+}
+#appCanvas #feedView #labelsWrapper .labelItem.label-outbox {
+  background-position: 3px -368px;
+}
+#appCanvas #feedView #mainWrapper {
+  width: 765px;
+  margin: 0 auto;
+  /********* the feed*/
+}
+#appCanvas #feedView #mainWrapper #feedWrapper {
+  padding: 10px 0;
+  /****** the card */
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper {
+  border-radius: 2px;
+  width: 100%;
+  min-height: 300px;
+  margin: 0px 0px 15px;
+  background: white;
+  overflow: hidden;
+  transition: min-height 0.5s ease-in-out;
+  /********** states*/
+  /******** card types*/
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.preloading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/cardPreloading.png) no-repeat center top white;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.preloading .spinner {
+  width: 90px;
+  height: 90px;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.preloading .spinner svg {
+  animation: rotate 1.5s linear infinite;
+  height: 100%;
+  width: 100%;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.preloading .spinner circle {
+  stroke-dasharray: 1,200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite 0s, color 6s ease-in-out infinite -0.75s;
+  stroke-linecap: round;
+  fill: none;
+  stroke-width: 3;
+}
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124;
+  }
+}
+@keyframes color {
+  100%,
+  0% {
+    stroke: #4285F4;
+  }
+  25% {
+    stroke: #DE3E35;
+  }
+  50% {
+    stroke: #F7C223;
+  }
+  75% {
+    stroke: #1DA760;
+  }
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.populated {
+  min-height: 0;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.populated img {
+  height: auto !important;
+  max-width: 100% !important;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.populated .gmail_extra {
+  display: none;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.populated .gmail_signature {
+  display: none;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner {
+  padding: 17px 17px 1px;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardHeader {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  position: relative;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardHeader .icon-3dots {
+  width: 15px;
+  height: 20px;
+  cursor: pointer;
+  display: inline-block;
+  text-indent: 100px;
+  background: url("../img/3dots.png") no-repeat center right transparent;
+  background-image: url("../img/3dots_black.png");
+  opacity: .25;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardHeader .icon-3dots:hover {
+  opacity: .4;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardHeader .msgInfo {
+  float: left;
+  width: 90%;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardHeader .msgInfo .text {
+  font-size: 15px;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardHeader .threadN {
+  background: url("../img/thread_n.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+  font-weight: 600;
+  height: 34px;
+  line-height: 28px;
+  margin: 10px auto -30px;
+  position: relative;
+  text-align: center;
+  width: 34px;
+  color: #777;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardHeader .msgExtraInfo {
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardHeader .text .fromTo {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #121212;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardHeader .text .fromTo .fromLink {
+  font-weight: 500;
+  color: #121212;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardHeader .text .fromTo .toList {
+  font-weight: 500;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardHeader .text .subject {
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardBody {
+  padding: 20px 0px;
+  font-size: 15px;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardBody .snippet {
+  font-weight: 400;
+  padding-left: 47px;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardBody .secRead {
+  display: none;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardBody .messageAttchment {
+  margin: 10px 0 0 50px;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardBody .embedlyBody {
+  /*margin-left:55px;*/
+  font-weight: 400;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardBody .embedlyBody .row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardBody .embedlyBody .imgWrapper {
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardBody .embedlyBody .imgWrapper img {
+  display: none;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardBody .embedlyBody .contentWrapper {
+  background-color: #f2f2f2;
+  min-height: 150px;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardBody .embedlyBody .contentWrapper h3 {
+  font-size: 22px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardBody .embedlyBody .siteLink {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  padding: 10px 0px;
+  font-size: 13px;
+  color: #989898;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardBody .embedlyBody .snippet {
+  margin: 15px 0;
+  padding: 0;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardBody .youtubeWrapper .contentWrapper h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardAtts .galleryPreview {
+  height: 200px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardAtts .galleryPreview .galleryItems {
+  display: none;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardAtts .galleryPreview .itemsCounter {
+  font-size: 23px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardFooter .actions {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardFooter .actions .btn {
+  color: #66666;
+  font-size: 11px;
+  padding: 2px 5px;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardFooter .replies .replyToBT {
+  background: url("../img/replyTo_white.png") no-repeat 5px center transparent;
+  color: #666666;
+  font-size: 13px;
+  text-transform: initial;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardFooter .replies .thumbsUpBT {
+  background-image: url("../img/thumbsUp_dark.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  /*                                background-size: 75%;*/
+  float: right;
+  height: 32px;
+  width: 32px;
+  margin: 14px 6px;
+  opacity: 1;
+  padding: 2px;
+  border-radius: 50%;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner .cardFooter .replies .thumbsUpBT:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  /*                                    opacity:.8;*/
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner.readMore .cardBody {
+  /*padding-left:55px;*/
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner.readMore .secRead {
+  display: inline-block;
+  padding-top: 10px;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner.readMore .secRead a {
+  color: #888;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 400;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner.threadLess .cardHeader {
+  border-bottom: 0;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner.threadLess .cardBody.embedlyBody .snippet {
+  margin: 15px 0;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper .cardInner.threadLess .messageAttchment {
+  margin: 10px 0 0 0;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored {
+  color: white;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored .cardInner .icon-3dots {
+  background-image: url("../img/3dots_white.png");
+  opacity: .5;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored .cardInner .icon-3dots:hover {
+  opacity: .9;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored .cardInner .cardHeader {
+  border-bottom: 0;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored .cardInner .cardHeader .text .fromTo {
+  color: white;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored .cardInner .cardHeader .text .fromTo .fromLink {
+  color: white;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored .cardInner .cardHeader .threadN {
+  display: none;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored .cardInner .cardBody {
+  padding: 6px 0px 12px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored .cardInner .cardFooter .actions {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored .cardInner .cardFooter .actions .btn {
+  color: white;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored .cardInner .cardFooter .replies .replyToBT {
+  background: url("../img/replyTo_color.png") no-repeat 5px center transparent;
+  color: white;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored .cardInner .cardFooter .replies .thumbsUpBT {
+  background-image: url("../img/thumbsUp_white.png");
+  opacity: 0.4;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor {
+  background: #a81111;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-j,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-y,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-i,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-g {
+  background: #0c5ba3;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-r,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-x {
+  background: #2e2e54;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-d,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-u,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-f {
+  background: #0aa33d;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-m,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-q,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-a {
+  background: #e56005;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-o,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-p,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-c {
+  background: #2c3e50;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-w,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-v,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-k,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-t {
+  background: #03b09e;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-s,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-n,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-l,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-b {
+  background: #127ccc;
+}
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-h,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-z,
+#appCanvas #feedView #mainWrapper #feedWrapper .cardWrapper.card-colored.cardColor-e {
+  background: #dda800;
+}
+#appCanvas #feedView #mainWrapper #columnWrapper {
+  background: url('../img/later_mockup.png') no-repeat 10px 5px transparent;
+  left: 50%;
+  margin-left: 123px;
+  position: fixed;
+}
+#appCanvas #feedView #vipWrapper {
+  position: fixed;
+  top: 64px;
+  width: 200px;
+  right: 0;
+  background: url('../img/vip_mockup.png') no-repeat left top transparent;
+  border-left: 1px solid #ddddde;
+}
+#appCanvas .senderImg {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 10px;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 2px;
+}
+#appCanvas .senderImg.noImage {
+  background: #03B09E;
+}
+#appCanvas .senderImg.noImage.bgColor-j,
+#appCanvas .senderImg.noImage.bgColor-y,
+#appCanvas .senderImg.noImage.bgColor-i,
+#appCanvas .senderImg.noImage.bgColor-g {
+  background: #0c5ba3;
+}
+#appCanvas .senderImg.noImage.bgColor-r,
+#appCanvas .senderImg.noImage.bgColor-x {
+  background: #2e2e54;
+}
+#appCanvas .senderImg.noImage.bgColor-d,
+#appCanvas .senderImg.noImage.bgColor-u,
+#appCanvas .senderImg.noImage.bgColor-f {
+  background: #0aa33d;
+}
+#appCanvas .senderImg.noImage.bgColor-m,
+#appCanvas .senderImg.noImage.bgColor-q,
+#appCanvas .senderImg.noImage.bgColor-a {
+  background: #e56005;
+}
+#appCanvas .senderImg.noImage.bgColor-o,
+#appCanvas .senderImg.noImage.bgColor-p,
+#appCanvas .senderImg.noImage.bgColor-c {
+  background: #2c3e50;
+}
+#appCanvas .senderImg.noImage.bgColor-w,
+#appCanvas .senderImg.noImage.bgColor-v,
+#appCanvas .senderImg.noImage.bgColor-k,
+#appCanvas .senderImg.noImage.bgColor-t {
+  background: #03b09e;
+}
+#appCanvas .senderImg.noImage.bgColor-s,
+#appCanvas .senderImg.noImage.bgColor-n,
+#appCanvas .senderImg.noImage.bgColor-l,
+#appCanvas .senderImg.noImage.bgColor-b {
+  background: #127ccc;
+}
+#appCanvas .senderImg.noImage.bgColor-h,
+#appCanvas .senderImg.noImage.bgColor-z,
+#appCanvas .senderImg.noImage.bgColor-e {
+  background: #dda800;
+}
+/*MATERIAL OVERRIDE*/
+.shadow-z-1 {
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+}
+/*=================================== new styles ==============================================*/
 .hidden {
   display: none;
 }
@@ -40,11 +1055,12 @@ article {
   height: 100%;
 }
 #wrapper {
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
   left: 0;
   bottom: 0;
+  padding-top: 64px;
   -webkit-transition: left 0.4s ease-in-out;
   -moz-transition: left 0.4s ease-in-out;
   -ms-transition: left 0.4s ease-in-out;
@@ -56,7 +1072,6 @@ article {
   left: -300px;
   background: #465056;
   width: 300px;
-  height: 100vh;
   box-sizing: border-box;
 }
 #wrapper #sidebar .header-left-menu-xs {
@@ -162,6 +1177,7 @@ article {
 #wrapper .main-content {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 #wrapper .main-content #sidebar-toggle {
   border-radius: 3px;
@@ -186,6 +1202,10 @@ article {
   height: 64px;
   background: #e6e6e6 !important;
   margin-bottom: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 .custom-nav .navbar-header_padding {
   padding: 5px;
@@ -266,7 +1286,6 @@ article {
   font-weight: normal;
   color: white;
   display: block;
-  border-bottom: 1px solid #8b8b8b;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   -ms-transition: background 0.3s ease-in-out;
@@ -294,12 +1313,16 @@ article {
 }
 .content {
   position: relative;
+  height: 100%;
   padding: 0 !important;
 }
 .content .message-box-wrap {
   margin-bottom: 100px;
   box-sizing: border-box;
   padding: 0 5px 5px 5px;
+  position: relative;
+  overflow-y: auto;
+  max-height: 84%;
 }
 .content .message-box-wrap .message-box {
   margin-bottom: 20px;
@@ -640,6 +1663,9 @@ article {
   }
 }
 @media screen and (max-width: 767px) {
+  #wrapper {
+    padding-top: 99px;
+  }
   .custom-nav {
     height: auto !important;
   }
@@ -677,9 +1703,12 @@ article {
   .message-icon {
     padding-left: 0 !important;
   }
+  .message-box-wrap {
+    max-height: 75% !important;
+  }
   .send-message-form-xs {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     left: 0;
     right: 0;
     padding: 20px 10px 0 10px !important;
@@ -689,5 +1718,10 @@ article {
   }
   .send-message-form-xs input {
     padding: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .send-message-form-xs {
+    bottom: 35px;
   }
 }

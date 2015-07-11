@@ -25,5 +25,5 @@ less
 package.json
 gulpfile.js
 node_modules
-
+.gitignore
 

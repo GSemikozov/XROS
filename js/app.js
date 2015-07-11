@@ -19,6 +19,10 @@ $(document).ready(function() {
     }
     setEqualHeight($(".columnsHeight > div"));
 });
+/*===================== vanillabox ===================================*/
+$(document).ready(function() {
+    $('a.vanilla').vanillabox();
+});
 /*===================== toogle left side menu =========================*/
 $(window).load(function(){
     $("[data-toggle]").click(function() {
